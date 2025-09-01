@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Blocking -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    
+    <title>503 Service Temporarily Unavailable</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 3rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .error-code {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #dc3545;
+            margin-bottom: 0.5rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .error-title {
+            font-size: 1.5rem;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-subtitle {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+
+        .error-body {
+            margin-bottom: 2rem;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #495057;
+        }
+
+        .technical-info {
+            background-color: #f8f9fa;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #495057;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.5rem 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .info-value {
+            color: #6c757d;
+            font-family: 'Courier New', monospace;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .server-info {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .error-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            .error-code {
+                font-size: 3rem;
+            }
+            
+            .error-title {
+                font-size: 1.25rem;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-container {
+                padding: 1.5rem 1rem;
+            }
+            
+            .error-code {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Security - Disable interactions */
+        * {
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-header">
+            <div class="error-code">503</div>
+            <h1 class="error-title">Service Temporarily Unavailable</h1>
+            <p class="error-subtitle">The server is temporarily unable to service your request</p>
+        </div>
+
+        <div class="error-body">
+            <p class="error-description">
+                The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.
+            </p>
+
+            <div class="technical-info">
+                Error: Connection timeout<br>
+                Reason: Backend server unreachable<br>
+                Timestamp: 2025-09-01 17:28:43 UTC
+            </div>
+
+            <div class="info-grid">
+                <span class="info-label">Error Code:</span>
+                <span class="info-value">HTTP 503</span>
+                
+                <span class="info-label">Request ID:</span>
+                <span class="info-value">req-7749ae3c-4b2f-4d8e</span>
+                
+                <span class="info-label">Server:</span>
+                <span class="info-value">nginx/1.24.0</span>
+                
+                <span class="info-label">Status:</span>
+                <span class="info-value">Backend maintenance</span>
+            </div>
+
+            <p style="margin-top: 1.5rem; color: #6c757d;">
+                If you are the site administrator, please check the server logs for more details about this error.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>This error was generated by the web server.</p>
+            <div class="server-info">
+                nginx/1.24.0 (Ubuntu)<br>
+                Port 80
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Basic security measures
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || 
+                (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+                (e.ctrlKey && ['U', 'S', 'A'].includes(e.key))) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Disable text selection
+        document.onselectstart = () => false;
+        document.ondragstart = () => false;
+
+        // Prevent zoom
+        document.addEventListener('wheel', function(e) {
+            if (e.ctrlKey) e.preventDefault();
+        }, { passive: false });
+
+        // Simple timestamp update
+        function updateTimestamp() {
+            console.log('Server check:', new Date().toISOString());
+        }
+        setInterval(updateTimestamp, 300000);
+    </script>
+</body>
+</html>
